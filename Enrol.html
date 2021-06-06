@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Used bootstrap to make the webpage more responsive and goodlooking while in the mobile view-->
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Bootstrap Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Used the enrol.css stylesheet to design the layout of the webpage-->
+  <link rel="stylesheet" href="enrol.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+
+
+<!--Put the navigation bar in Enrolment page to ease the navigation navigation bar is put here-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     	  <img src="images.jpg" height="50" width="50">
+		  <a class="navbar-brand">University of Dowell</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	          <li><a href="webpage.html">Home</a></li>
+        <li><a href="UDW.html">Login</a></li>
+		<li><a href="enrol.html">Enrol</a></li>
+        <li><a href="register.html">Register</a></li>
+		        <li><a href="MyTimetable.html">MyTimetable</a></li>
+				        <li><a href="Unitoutline.html">Units Handbook</a></li>
+		
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<!--Used the collapsible bars so that the user will be able to make enrolment details go away by pressing the bars. the default view of the 
+bars will be hidden-->
+<h1>University of Dowell</h1>
+<h2>73T Bachelor of Information and Communication Technology - Study Plan Details</h2>
+<button type="button" class="collapsible">Year 1</button>
+<div class="content">
+<table cellspacing="5" class="table table-bordered-black">
+      <tr>
+        <td><strong>Unit Code</strong></td>
+        <td><strong>Unit Availability<strong></td>
+		</tr>
+		<tr>
+		<td><strong>KIT101 Programming Fundamentals</strong></td>
+        <td><strong>Campus:Dowell City Campus <br><br>
+		Availability:Semester 1,2020<strong><br><br>
+		 Enrol  <input type="checkbox" id="cb" name="enrol" value="enrol1"></td>
+		<tr>
+		<td><strong>KIT102 Introduction to Data Science</strong></td>
+        <td><strong>Campus:Dowell City Campus <br><br>
+		Availability:Semester 1,2020<strong><br><br>
+		 Enrol  <input type="checkbox" id="cb" name="enrol2" value="enrol3"></td>
+		<tr>
+		<td><strong>KIT103 Computational Science</strong></td>
+        <td><strong>Campus:Dowell City Campus <br><br>
+		Availability:Semester 1,2020<strong><br><br>
+		 Enrol  <input type="checkbox" id="cb" name="enrol4" value="enrol15"></td>
+		 <tr>
+		<td><strong>KIT104 Operating systems</strong></td>
+        <td><strong>Campus:Dowell City Campus <br><br>
+		Availability:Semester 1,2020<strong><br><br>
+		 Enrol  <input type="checkbox" id="cb" name="enrol6" value="enrol7"></td>
+		
+		
+		</table>
+
+</div>
+<button type="button" class="collapsible">Year 2</button>
+<div class="content">
+<table cellspacing="5" class="table table-bordered-black">
+      <tr>
+	  		<!-- Used the checkbox to confirm the enrolment-->
+        <td><strong>Unit Code</strong></td>
+        <td><strong>Unit Availability<strong></td>
+		</tr>
+		<tr>
+		<td><strong>KIT107 Programming</strong></td>
+        <td><strong>Campus:Dowell City Campus <br><br>
+		Availability:Semester 1,2020<strong><br><br>
+		 Enrol  <input type="checkbox" id="cb" name="enrol" value="enrol1"></td>
+		<tr>
+				<!-- Used the checkbox to confirm the enrolment-->
+		<td><strong>KIT108 Artificial intelligence</strong></td>
+        <td><strong>Campus:Dowell City Campus <br><br>
+		Availability:Semester 1,2020<strong><br><br>
+		 Enrol  <input type="checkbox" id="cb" name="enrol2" value="enrol3"></td>
+		<tr>
+				<!-- Used the checkbox to confirm the enrolment-->
+		<td><strong>KIT203 Business analysis</strong></td>
+        <td><strong>Campus:Dowell City Campus <br><br>
+		Availability:Semester 1,2020<strong><br><br>
+		 Enrol  <input type="checkbox" id="cb" name="enrol4" value="enrol15"></td>
+		 <tr>
+		 		<!-- Used the checkbox to confirm the enrolment-->
+		<td><strong>KIT205 Data structures and algorithms</strong></td>
+        <td><strong>Campus:Dowell City Campus <br><br>
+		Availability:Semester 1,2020<strong><br><br>
+		<!-- Used the checkbox to confirm the enrolment-->
+		 Enrol  <input type="checkbox" id="cb" name="enrol6" value="enrol7"></td>
+		
+		
+		</table>
+</div>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="collapse.js"></script>
+
+
+</body>
+</html>

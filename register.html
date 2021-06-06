@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Bootstrap Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     	  <img src="images.jpg" height="50" width="50">
+		  <a class="navbar-brand">University of Dowell</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	          <li><a href="webpage.html">Home</a></li>
+        <li><a href="UDW.html">Login</a></li>
+		<li><a href="enrol.html">Enrol</a></li>
+        <li><a href="register.html">Register</a></li>
+		        <li><a href="MyTimetable.html">MyTimetable</a></li>
+				        <li><a href="Unitoutline.html">Units Handbook</a></li>
+		
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+    </br>
+    <h1>Registration for student/staff</h1>
+	<br>
+	<div>
+	<form id="form" onsubmit="return validate();">
+	<br>
+StudentID/staffID:<input type="number" id="id"><br>
+<br>
+Name:<input type="text" id="lname"><br><br>
+Email:<input type="text" id="mail"><br>
+<br>
+Password:<input type="password" id="pass"><br>
+<br>
+Confirm Password:<input type="password" id="passcon"><br>
+<br>
+<p>Qualification:</p>
+PHD<input type="radio" id="male" name="RD1">
+<br>
+Master<input type="radio" id="female" name="RD1">
+<br>
+Bachelor<input type="radio" id="unspecified" name="RD1">
+<br><br>
+Expertise:<input type="text" id="lname"><br><br>
+DOB(Date of Birth):<input type="date" id="dob"><br>
+<br>
+Address:<input type="text" id="add"><br>
+<br>
+Phone number:<input type="number" id="phno"><br>
+<br>
+<br>
+<input type="submit" id="b_submit" value="submit"/>
+</form>
+</div>
+</div>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="styles.js"></script>
+</body>
+</html>

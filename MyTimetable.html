@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Used bootstrap to make the webpage more responsive and goodlooking while in the mobile view-->
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Bootstrap Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!--Used timetable.css to design the layout of the webpage-->
+  <link rel="stylesheet" href="timetable.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+
+
+<!--Put the navigation bar to ease the navigation from one page to another-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     	  <img src="images.jpg" height="50" width="50">
+		  <a class="navbar-brand">University of Dowell</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	          <li><a href="webpage.html">Home</a></li>
+        <li><a href="UDW.html">Login</a></li>
+		<li><a href="enrol.html">Enrol</a></li>
+        <li><a href="register.html">Register</a></li>
+		        <li><a href="MyTimetable.html">MyTimetable</a></li>
+				        <li><a href="Unitoutline.html">Units Handbook</a></li>
+		
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<h1>University of Dowell</h1>
+<div class="container" id="log">
+  <div class="row">
+    <div class="col-sm-4">
+<!--Used labels so that data can be displayed in them once it starts interacting with the database-->
+      <h2>About Me</h2>
+	  	<img src="account-profile-clipart.jpg"></img>
+      <h5>Logged in as:</h5>
+	  <h5>Course:</h5>
+
+
+      <hr class="d-sm-none">
+    </div>
+	<!-- Timetable design inspiration taken from the UTAS timetable. Some sample data put inside it to show how it will look with
+	database interaction-->
+    <div class="col-sm-8" id="gol">
+      <h2>MyTimetable</h2>
+	  <select id="Choose an option">
+	  <option>Current Week</option>
+  <option>All weeks</option>
+  </select><br><br>
+  </div>
+  
+    <div class="col-sm-8" id="gol">
+	<div class="table-responsive">
+	  <table>
+      <tr id="row1">
+        <td><strong>Subject Code </strong></td>
+        <td><strong>Subject Description</strong></td>
+		<td><strong>Group</strong></td>
+        <td><strong>Activity</strong></td>
+		<td><strong>Day</strong></td>
+        <td><strong>TIme</strong></td>
+		<td><strong>Campus</strong></td>
+        <td><strong>Location</strong></td>
+		<td><strong>Duration</strong></td>
+        <td><strong>Weeks</strong></td>
+		</tr>
+      <tr id="row2">
+        <td><strong>KIT202_H_SEM1 </strong></td>
+        <td><strong>Web Programming</strong></td>
+		<td><strong>Lec.</strong></td>
+        <td><strong>Lec01-P1</strong></td>
+		<td><strong>Monday</strong></td>
+        <td><strong>9:00AM</strong></td>
+		<td><strong>Dowell City Campus</strong></td>
+        <td><strong>UODCent456</strong></td>
+		<td><strong>2hours</strong></td>
+        <td><strong>6/4</strong></td>
+		</tr>
+      <tr id="row3">
+        <td><strong>KIT204_H_SEM1 </strong></td>
+        <td><strong>Business Analysis</strong></td>
+		<td><strong>Tutorial.</strong></td>
+        <td><strong>Tut02-P0-P1</strong></td>
+		<td><strong>Tuesday</strong></td>
+        <td><strong>11:00AM</strong></td>
+		<td><strong>Dowell City Campus</strong></td>
+        <td><strong>UODCent451</strong></td>
+		<td><strong>2 hours</strong></td>
+        <td><strong>1/4</strong></td>
+		</tr>
+      <tr id="row4">
+        <td><strong>KIT205_H_SEM1 </strong></td>
+        <td><strong>Data Structures nad Algorithms</strong></td>
+		<td><strong>Lec.</strong></td>
+        <td><strong>Lec03-P1</strong></td>
+		<td><strong>Wednesday</strong></td>
+        <td><strong>11:00 AM</strong></td>
+		<td><strong>Dowell City Campus</strong></td>
+        <td><strong>UODCent455</strong></td>
+		<td><strong>2hours</strong></td>
+        <td><strong>6/4</strong></td>
+		</tr>
+      <tr id="row5">
+               <td><strong>KIT205_H_SEM1 </strong></td>
+        <td><strong>Data Structures nad Algorithms</strong></td>
+		<td><strong>Tut.</strong></td>
+        <td><strong>Tut03-P1</strong></td>
+		<td><strong>Wednesday</strong></td>
+        <td><strong>11:00 AM</strong></td>
+		<td><strong>Dowell City Campus</strong></td>
+        <td><strong>UODPhy275</strong></td>
+		<td><strong>2hours</strong></td>
+        <td><strong>6/4</strong></td>
+		</tr>
+		</tr>
+      <tr id="row6">
+        <td><strong>KIT202_H_SEM1 </strong></td>
+        <td><strong>Web Programming</strong></td>
+		<td><strong>Tut.</strong></td>
+        <td><strong>Tut-01-P1</strong></td>
+		<td><strong>Thursday</strong></td>
+        <td><strong>9:00AM</strong></td>
+		<td><strong>Dowell City Campus</strong></td>
+        <td><strong>UODCent459</strong></td>
+		<td><strong>2hours</strong></td>
+        <td><strong>2/4</strong></td>
+		</tr>
+      <tr id="row7">
+        <td><strong>KIT301_H_SEM1 </strong></td>
+        <td><strong>Project-A</strong></td>
+		<td><strong>Lec.</strong></td>
+        <td><strong>Lec-04-P1</strong></td>
+		<td><strong>Thursday</strong></td>
+        <td><strong>12:00PM</strong></td>
+		<td><strong>Dowell City Campus</strong></td>
+        <td><strong>UODLib234</strong></td>
+		<td><strong>3hours</strong></td>
+        <td><strong>1/4</strong></td>
+		</tr>
+         </table>
+		 <br>
+		 <!-- table used as to show how the timetable will look in future with data-->
+		 <!-- links to the enrolment page and tutorial allocation page if the user  can't see his/her timetable-->
+	  <p><a href="enrol.html">Not Enrolled yet?<a href="ICT.html">  Not allocated yet?</p>
+
+	  
+     
+</div>
+</div>
+
+</body>
+</html>

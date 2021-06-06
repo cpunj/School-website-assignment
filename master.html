@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Used bootstrap to make the webpage more responsive and goodlooking while in the mobile view-->
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Bootstrap Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Used the master.css stylesheet to design the layout of the webpage-->
+  <link rel="stylesheet" href="master.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+
+
+<!--Put the navigation bar in master unit page as this is separate from other pages. To ease the navigation navigation bar is put here-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     	  <img src="images.jpg" height="50" width="50">
+		  <a class="navbar-brand">University of Dowell</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	          <li><a href="webpage.html">Home</a></li>
+        <li><a href="UDW.html">Login</a></li>
+		<li><a href="enrol.html">Enrol</a></li>
+        <li><a href="register.html">Register</a></li>
+		        <li><a href="MyTimetable.html">MyTimetable</a></li>
+				        <li><a href="Unitoutline.html">Units Handbook</a></li>
+		
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<!--Used a table design for the selection of staff for units-->
+      <h2>Unit details</h2>
+	  <!--Made the table responsive to make it even more user friendly for mobile view-->
+	  <div class="table-responsive">
+	  <table>
+      <tr>
+        <td><strong>Unit </strong></td>
+        <td><strong>Unit Description</strong></td>
+		<td><strong>Campus</strong></td>
+        <td><strong>Semester</strong></td>
+		<td><strong>Unit co-ordinator</strong></td>
+		</tr>
+		 <tr>
+        <td><strong>MEC2034 Mechanical Science</strong></td>
+        <td><strong>This unit introduces the fundamental concepts of mechanical engineering science. Students develop knowledge and understanding of static and dynamic equilibrum of mechanical engineering systems.
+		It also provides an introduction to core areas of mechanical engineering, including thermodynamics and aerodynamics.
+ </strong></td>
+
+		<td><select id="option">
+		 <option>Campus</option>
+  <option>Dowell City Campus</option>
+  <option>Dowell village campus</option>
+</select> 
+		 <td><select id="semester">
+		 <option>Semester</option>
+  <option>Semester 1,2020</option>
+  <option>Semester 2,2020</option>
+</select> </td>
+<td> Harrison Wells</td>
+</td>
+</tr>
+<tr>
+        <td><strong>CHEM231 Chemical engineering</strong></td>
+        <td><strong>Chemical science is the study of matter. In this collection, you will find educational resources covering subjects such as pure mixtures and substances, states of matter and properties of materials.
+		Teaching resources available include worksheets, posters, teaching presentations, classroom decorations and more.
+ </strong></td>
+
+		<td><select id="option">
+		 <option>Campus</option>
+  <option>Dowell City Campus</option>
+  <option>Dowell village campus</option>
+</select> 
+		 <td><select id="semester">
+		 <option>Semester</option>
+  <option>Semester 1,2020</option>
+  <option>Semester 2,2020</option>
+</select> </td>
+<td> Caitlin Snow</td>
+</td>
+</tr>
+<tr>
+        <td><strong>AI235 Artificial Intelligence</strong></td>
+        <td><strong>The unit provides an introduction to many AI sub-fields, including: expert systems, machine learning, natural language processing, computer vision, intelligent agents. Students will be exposed to state-of-the-art examples as well as emerging technologies and get practical experience of solving interesting problems in each of these sub-fields.
+The unit covers the definition of Artificial Intelligence and its subfields; introduces foundational logic and knowledge representation; and considers social, ethical, and philosophical consequences of the theory and practice of AI. Students will learn different perspectives on the approach to creating AI, its purpose, and its validity.
+ </strong></td>
+
+		<td><select id="option" >
+		 <option>Campus</option>
+  <option>Dowell City Campus</option>
+  <option>Dowell village campus</option>
+</select> 
+		 <td><select id="semester">
+		 <option>Semester</option>
+  <option>Semester 1,2020</option>
+  <option>Semester 2,2020</option>
+</select> </td>
+<td> Cisco Ramone</td>
+</td>
+</tr>
+</table>
+</div><br>
+<button type="button" class="btn btn-success" id="bb">Confirm</button>
+<button type="button" class="btn btn-danger" id="bb">Reset</button>
+
+</body>
+</html>

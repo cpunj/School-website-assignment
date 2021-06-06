@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Used bootstrap to make the webpage more responsive and goodlooking while in the mobile view-->
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Bootstrap Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!--Used the ICT.css stylesheet to design the layout of the webpage-->
+  <link rel="stylesheet" href="ICT.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+
+
+<!--Put the navigation bar in ICT allocation tutorial selection as this is separate from other pages. To ease the navigation navigation bar is put here-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     	  <img src="images.jpg" height="50" width="50">
+		  <a class="navbar-brand">University of Dowell</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	          <li><a href="webpage.html">Home</a></li>
+        <li><a href="UDW.html">Login</a></li>
+		<li><a href="enrol.html">Enrol</a></li>
+        <li><a href="register.html">Register</a></li>
+		        <li><a href="MyTimetable.html">MyTimetable</a></li>
+				        <li><a href="Unitoutline.html">Units Handbook</a></li>
+		
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<!-- Tutorial allocation design made similar to that of UTAS older ICT allocation system. Easy selection options provided and template data provided to 
+show how the page will look when data interaction will take place-->
+<h1><strong>Tutorial Allocation System</strong></h1>
+<p><label for="allocate">Logged in as:</label></p><p><label for="allocate">StudentID:</label></p>
+<p><label for="email">email address:</label></p><p><label for="Course">Course:</label></p>
+
+
+<br><br><br>
+<div class="col-xs-offset-1 col-xs-10">
+<table cellspacing="0" class="table table-bordered-black">
+      <tr>
+        <td><strong>Unit Code</strong></td>
+        <td><strong>Unit Title<strong></td>
+		<td><strong>Tutorial classes<strong></td>
+      </tr>
+	   <tr>
+        <td><strong>KIT101</strong></td>
+        <td><strong>Programming Fundamentals<strong></td>
+		<td><select id="--Choose an option--">
+		 <option>--Choose an option--</option>
+  <option>Monday 9:00 AM, Cent278 1/20</option>
+  <option>Tuesday 11:00 AM, Cent275 4/20</option>
+    <option>Wednesday 1:00 PM, Cent279 10/20</option>
+</select> 
+</td>
+      </tr>
+	   <tr>
+        <td><strong>KIT102 </strong></td>
+        <td><strong>Introduction to data Science<strong><br>
+		
+		<td><select id="--Choose an option--">
+		 <option>--Choose an option--</option>
+  <option>Monday 11:00 AM, Cent275 19/20</option>
+  <option>Friday 9:00 AM, Cent275 6/20</option>
+    <option>Thursday 1:00 PM, Cent275 12/20</option>
+  
+</select> 
+</td>
+      </tr>
+	   <tr>
+        <td><strong>KIT103 </strong></td>
+        <td><strong>Computational Sciences<strong><br></td>
+		<td><select id="Choose an option">
+		 <option>--Choose an option--</option>
+   <option>Monday 1:00 PM, Cent272 10/20</option>
+  <option>Friday 11:00 AM, Cent272 12/20</option>
+    <option>Thursday 3:00 PM, Cent272 13/20</option>
+</select> 
+</td>
+      </tr>
+	   <tr>
+        <td><strong>KIT104 </strong></td>
+        <td><strong>Operating Systems<strong></td>
+		<td><select id="Choose an option">
+		 <option>--Choose an option--</option>
+  <option>Monday 4:00 PM, Cent272 14/20</option>
+  <option>Tuesday 9:00 AM, Cent272 16/20</option>
+    <option>Thursday 1:00 PM, Cent272 12/20</option>
+</select> 
+</td>
+      </tr>
+	  </table>
+	  <button type="button">Confirm</button>
+	  <button type="button">Reset</button>
+	  <br>
+	  <br><br>
+	  <p> For more enquiries please visit <a href="ICThelp.com">ICT help desk</p>
+</body>
+</html>

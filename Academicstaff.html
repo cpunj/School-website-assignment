@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Used bootstrap to make the webpage more responsive and goodlooking while in the mobile view-->
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="styles.js"></script>
+  <title>Bootstrap Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!--Used this style sheet from w3schools to design he list of staff members. This list can be used to add or delete staff members in future with the help of the database-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+
+
+<!--put the navigation bar above every master page so that the degree co-ordinator can jump to any other page easily if he/she wants to-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     	  <img src="images.jpg" height="50" width="50">
+		  <a class="navbar-brand">University of Dowell</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	          <li><a href="webpage.html">Home</a></li>
+        <li><a href="UDW.html">Login</a></li>
+		<li><a href="enrol.html">Enrol</a></li>
+        <li><a href="register.html">Register</a></li>
+		        <li><a href="MyTimetable.html">MyTimetable</a></li>
+				        <li><a href="Unitoutline.html">Units Handbook</a></li>
+		
+
+      </ul>
+
+  </div>
+</nav>
+<!-- Staff List created to using container to make the staff list above and the added members down in the table below. Added some template data to them-->
+<div class="w3-container">
+  <h2>Staff List</h2>
+  <p>Add or remove the staff from here</p>
+  <ul class="w3-ul w3-card-4">
+    <li class="w3-bar">
+	      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">+</span>
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="account-profile-clipart.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Harrison Wells</span><br>
+        <span>Qualification:PHD</span><br>
+		<span>Expertise:Quantum mechanics</span><br>
+		<span>Available to teach:Wednesday and Thursday</span><br>
+				<span>Consultation hours:Wednesday 2:00 PM to 4:00 PM</span>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+		      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">+</span>
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="account-profile-clipart.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Cisco Ramon</span><br>
+        <span>Qualification:PHD</span><br>
+		<span>Expertise:Artificial Intelligence</span><br>
+		<span>Available to teach:Monday and Tuesday</span><br>
+				<span>Consultation hours:Monday 1:00 PM to 3:00 PM</span>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+		      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">+</span>
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="account-profile-clipart.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Caitlin Snow</span><br>
+        <span>Qualification:PHD</span><br>
+		        <span>Expertise:Chemical Engineering</span><br>
+						<span>Available to teach:Friday</span><br>
+				<span>Consultation hours:Friday 12:00 PM to 2:00 PM</span>
+      </div>
+    </li>
+  </ul>
+</div><br>
+<button type="button" class="btn btn-success" id="bb1">Confirm</button>
+<button type="button" class="btn btn-danger" id="bb2">Reset</button>
+<!-- A table used to show the added members to the staff list-->
+<div class="w3-container">
+  <h2>Lecturer List</h2>
+  <p>Assign the lectures to the selected staff here</p>
+<div class="col-xs-offset-1 col-xs-10">
+<table cellspacing="0" class="table table-bordered-black">
+      <tr>
+        <td><strong>Lecturer</strong></td>
+        <td><strong>Semester<strong></td>
+		<td><strong>Campus<strong></td>
+      </tr>
+	   <tr>
+        <td><strong>Harrison Wells</strong></td>
+        <td><strong><select id="--Choose a semester--">
+		 <option>--Choose a semester--</option>
+  <option>Semester 1,2020</option>
+  <option>Semester 2,2020</option>
+</select> <strong></td>
+		<td><select id="--Choose an option--">
+		 <option>--Choose a campus--</option>
+  <option>Dowell City Campus</option>
+  <option>Dowell village campus</option>
+</select> 
+</td>
+</tr>
+        <td><strong>Caitlin Snow</strong></td>
+        <td><strong><select id="--Choose a semester--">
+		 <option>--Choose a semester--</option>
+  <option>Semester 1,2020</option>
+  <option>Semester 2,2020</option>
+</select> <strong></td>
+		<td><select id="--Choose an option--">
+		 <option>--Choose a campus--</option>
+  <option>Dowell City Campus</option>
+  <option>Dowell village campus</option>
+</select> 
+</td>
+</table>
+<button type="button" class="btn btn-success" id="bb3">Confirm</button>
+<button type="button" class="btn btn-danger" id="bb4">Reset</button>
+<h2>Tutorials List</h2>
+  <p>Assign the tutorials to the selected staff here</p>
+<div class="col-xs-offset-1 col-xs-10">
+<table cellspacing="0" class="table table-bordered-black">
+      <tr>
+        <td><strong>Tutor</strong></td>
+		        <td><strong>Unit</strong></td>
+        <td><strong>Tutorial<strong></td>
+      </tr>
+	   <tr>
+        <td><strong>Barry Allen</strong></td>
+        <td><strong>Chemical Engineering</strong></td>
+<td><select id="--Choose an option--">
+		 <option>--Choose a campus--</option>
+  <option>CHEM123, Thursday 2PM-4PM</option>
+    <option>CHEM123, Monday 4PM-6PM</option>
+</select> <strong></td>
+</tr>
+		<tr>
+        <td><strong>Caitlin Snow</strong></td>
+        <td><strong>Chemical Engineering</strong></td>
+<td><select id="--Choose an option--">
+		 <option>--Choose a campus--</option>
+		   <option>CHEM123, Monday 3PM-5PM</option>
+  <option>CHEM123, Friday 12PM-2PM</option>
+</select> <strong></td>
+</tr>
+<tr>
+        <td><strong>Bruce Wayne</strong></td>
+        <td><strong>Physics</strong></td>
+<td><select id="--Choose an option--">
+		 <option>--Choose a campus--</option>
+		   <option>PHY133, Monday 3PM-5PM</option>
+  <option>PHY143, Friday 12PM-2PM</option>
+</select> <strong></td>
+</tr>
+        
+</table>
+<button type="button" class="btn btn-success" id="bb5">Confirm</button>
+<button type="button" class="btn btn-danger" id="bb6">Reset</button>
+
+</body>
+</html>
